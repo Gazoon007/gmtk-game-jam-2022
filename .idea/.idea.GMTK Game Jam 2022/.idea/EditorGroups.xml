@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EditorGroups">
+    <lastGroup>
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/IEnemy.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Modes/Weapon1Mode.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/TowerScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/IWeapon.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyData.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponUnit.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapons.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponData.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapons.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/Modes/Enemy1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemies.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Modes/Weapon1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyUnit.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Dice.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+    </lastGroup>
+  </component>
+</project>
