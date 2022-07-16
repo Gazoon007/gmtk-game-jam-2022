@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using UnityEngine;
 
 namespace Weapon.Modes
 {
@@ -7,6 +8,8 @@ namespace Weapon.Modes
 	{
 		public override void Fire()
 		{
+			Debug.Log("Player Fire " + damageValue);
+			Debug.Log("With Range " + rangeValue);
 		}
 	}
 }
