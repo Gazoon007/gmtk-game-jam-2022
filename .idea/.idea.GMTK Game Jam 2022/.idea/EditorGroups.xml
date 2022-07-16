@@ -16,6 +16,7 @@
       <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemies.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Modes/Weapon1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyUnit.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/Dice.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/IWeapon.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
     </lastGroup>
   </component>
