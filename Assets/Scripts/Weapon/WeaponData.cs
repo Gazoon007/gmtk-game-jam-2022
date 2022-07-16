@@ -4,8 +4,7 @@ namespace Weapon
 {
 	public abstract class WeaponData : ScriptableObject, IWeapon
 	{
-		public int rangeValue;
-		public int damageValue;
+		public int maxRangeValue;
 
 		public abstract void Fire();
 	}

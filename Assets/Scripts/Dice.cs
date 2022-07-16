@@ -1,11 +1,36 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Dice
+public class Dice : MonoBehaviour
 {
-	[SerializeField] private const int Sides = 6;
+	private int firstDiceSides;
+	private int secondDiceSides;
 
-	public int RollADice()
+	public static Action<int> OnRolledFirstDice;
+	public static Action<int> OnRolledSecondDice;
+
+	public void SelectFirstDice(int sides)
 	{
-		return Random.Range(1, Sides);
+		firstDiceSides = sides;
+	}
+
+	public void SelectSecondDice(int dices)
+	{
+		secondDiceSides = dices;
+	}
+	
+	public void RollFirstDice()
+	{
+		var result = Random.Range(1, firstDiceSides);
+		Debug.Log("First Dice " + result);
+		OnRolledFirstDice?.Invoke(result);
+	}
+
+	public void RollSecondDice()
+	{
+		var result = Random.Range(1, secondDiceSides);
+		Debug.Log("Second Dice " + result);
+		OnRolledSecondDice?.Invoke(result);
 	}
 }

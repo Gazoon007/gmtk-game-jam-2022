@@ -8,8 +8,7 @@ namespace Weapon.Modes
 	{
 		public override void Fire()
 		{
-			Debug.Log("Player Fire " + damageValue);
-			Debug.Log("With Range " + rangeValue);
+			Debug.Log("Fired With Max Range " + maxRangeValue);
 		}
 	}
 }

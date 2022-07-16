@@ -4,7 +4,12 @@
     <lastGroup>
       <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/IEnemy.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Modes/Weapon1Mode.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
+      <p k="$PROJECT_DIR$/Assets/Scripts/TowerScript.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/IWeapon.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyData.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
       <p k="$PROJECT_DIR$/Assets/Scripts/Weapon/Weapon1.cs" v="RegexGroup: v1|CURRENT_FOLDER||.*.cs" />
