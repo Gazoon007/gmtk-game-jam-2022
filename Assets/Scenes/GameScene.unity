@@ -3930,6 +3930,7 @@ GameObject:
   - component: {fileID: 1449744143}
   - component: {fileID: 1449744144}
   - component: {fileID: 1449744145}
+  - component: {fileID: 1449744146}
   m_Layer: 0
   m_Name: Highlight
   m_TagString: highlight
@@ -4051,6 +4052,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1449744146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449744141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553159ef1e688a747849b53aa060a507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1459969464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,6 +4334,7 @@ MonoBehaviour:
   canAttack: 0
   atkAndRngTradeOff: {fileID: 1342329584}
   highlight: {fileID: 1449744141}
+  projectile: {fileID: 4771950734816923023, guid: ae37d78591a2b754bbdfa7312d0a791f, type: 3}
 --- !u!1 &1544386974
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
 
     public GameObject atkAndRngTradeOff;
     public GameObject highlight;
+    public GameObject projectile;
     
     public int FirstDicePoint
     {
@@ -64,11 +65,11 @@ public class PlayerScript : MonoBehaviour
             highlight.SetActive(false);
             highlight.transform.position = new Vector3(0f, highlight.transform.position.y, highlight.transform.position.z);
             
-            LeanTween.delayedCall(1f, () =>
+            LeanTween.delayedCall(2f, () =>
             {
                 GameManager.GetInstance().EndTurnButton();
             });
-            LeanTween.delayedCall(2f, () =>
+            LeanTween.delayedCall(3f, () =>
             {
                 GameManager.GetInstance().EndTurnButton();
                 canAttack = true;
@@ -83,6 +84,17 @@ public class PlayerScript : MonoBehaviour
         GameManager.OnTradedValue -= OnTradedValue;
     }
 
+    public void LaunchProjectile()
+    {
+        var projectileIns = Instantiate(projectile, gameObject.transform);
+        projectileIns.transform.localPosition = new Vector3(0, 0, 0);
+        LeanTween.move(projectileIns, highlight.gameObject.transform.position, 1f);
+        LeanTween.delayedCall(1f, () =>
+        {
+            Destroy(projectileIns);
+        });
+    }
+    
     private void OnTradedValue(int first, int second)
     {
         OnRolledFirstDice(first);
@@ -101,7 +113,7 @@ public class PlayerScript : MonoBehaviour
             highlight.gameObject.GetComponent<Collider2D>().enabled = true;
             highlight.SetActive(false);
             highlight.transform.position = new Vector3(0f, highlight.transform.position.y, highlight.transform.position.z);
-            LeanTween.delayedCall(1f, () =>
+            LeanTween.delayedCall(2f, () =>
             {
                 GameManager.GetInstance().EndTurnButton();
                 canAttack = true;

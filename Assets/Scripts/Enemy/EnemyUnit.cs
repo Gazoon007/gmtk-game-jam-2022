@@ -20,7 +20,7 @@ namespace Enemy
 				if (enemy.dodgedText)
 				{
 					enemy.dodgedText.SetActive(true);
-					LeanTween.delayedCall(4f, () =>
+					LeanTween.delayedCall(3f, () =>
 					{
 						enemy.dodgedText.SetActive(false);
 					});
@@ -29,12 +29,18 @@ namespace Enemy
 				return;
 			}
 			
-			enemy.CurrentHealth -= damage;
+			LeanTween.delayedCall(1f, () =>
+			{
+				enemy.CurrentHealth -= damage;
+			});
 			if (enemy.CurrentHealth <= 0)
 			{
 				GameManager.GetInstance().EndTurn -= enemy.EnemyMovement_EndTurn;
 				enemy.CurrentHealth = 0;
-				Destroy(enemy.gameObject);
+				LeanTween.delayedCall(1f, () =>
+				{
+					Destroy(enemy.gameObject);
+				});
 			}
 			else
 			{

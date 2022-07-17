@@ -56,13 +56,16 @@ public class EnemyScript : MonoBehaviour
 	private void OnMouseEnter()
 	{
 		if (isColided)
+		{
 			transform.localScale = new Vector3(1.2f, 1.2f, 1);
+		}
 	}
 
 	private void OnMouseDown()
 	{
 		if (isColided)
 		{
+			PlayerScript.GetInstance().LaunchProjectile();
 			var damage = PlayerScript.GetInstance().TryAttack();
 			enemyData.Hit(damage, this);
 			isColided = false;
