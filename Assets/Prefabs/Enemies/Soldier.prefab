@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 1016489126991960358}
   - component: {fileID: 1016489126991960359}
   - component: {fileID: 1016489126991960356}
+  - component: {fileID: 2028881254701313018}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -336,6 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e0befe61814390bc2023aa2535edc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dodgedText: {fileID: 0}
   healthSlider: {fileID: 1016489127931753503}
   enemyData: {fileID: 11400000, guid: 0176d8dddf588704f9df0bbfea7760b7, type: 2}
 --- !u!70 &1016489126991960356
@@ -354,6 +356,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.027030945, y: 0.0000009536743}
   m_Size: {x: 6.9874115, y: 11.974546}
   m_Direction: 0
+--- !u!95 &2028881254701313018
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016489126991960357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94c6d8f746acb9b479b341fa7cb88f34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1016489127426329021
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,12 +449,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: da91b5423495d2a46a6936a3730f610a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 22.857143, y: 13.714286}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
