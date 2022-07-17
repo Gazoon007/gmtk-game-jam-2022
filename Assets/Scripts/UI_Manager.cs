@@ -125,4 +125,16 @@ public class UI_Manager : MonoBehaviour
 		activeMenu = weaponSelection;
 		weaponSelection.gameObject.SetActive(true);
 	}
+
+	public void ExitGame()
+	{
+		Application.Quit();
+
+		Debug.Log("Application was exited");
+	}
+
+	public void ResetLevel()
+	{
+
+	}
 }
