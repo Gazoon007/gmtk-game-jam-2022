@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
+
+        Screen.SetResolution(1920, 1080, false);
     }
 
     public void TradeAttackValue()

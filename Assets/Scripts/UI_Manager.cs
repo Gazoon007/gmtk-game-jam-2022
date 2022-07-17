@@ -11,23 +11,31 @@ public class UI_Manager : MonoBehaviour
 	private Transform creditsMenu;
 	private Transform levelSelectMenu;
 	private Transform gameOverlay;
+	private Transform weaponSelection;
+	public Transform cantRerollText;
 
-	private int numberOfLeftWeaponSwaps;
+	public int numberOfLeftWeaponSwaps;
+
+	public bool hasRerolledWeapon;
+	public bool isFirstWeaponReroll = true;
 
 	void Start()
 	{
-		Transform UI = GameObject.Find("UI").transform.GetChild(0);
+		Transform UI = GameObject.Find("New UI").transform.GetChild(0);
 		menuBackgroundImage = UI.GetChild(0);
 		mainMenu = UI.GetChild(1);
 		creditsMenu = UI.GetChild(2);
 		levelSelectMenu = UI.GetChild(3);
 		gameOverlay = UI.GetChild(4);
+		weaponSelection = UI.GetChild(5);
+		cantRerollText = weaponSelection.GetChild(0);
 
 		activeMenu = mainMenu;
 
 		numberOfLeftWeaponSwaps = 2;
 		SwapWeapon(false);
 		ChangeEnemyCount(3);
+		isFirstWeaponReroll = true;
 	}
 
 	public void Credits()
@@ -54,25 +62,37 @@ public class UI_Manager : MonoBehaviour
 		levelSelectMenu.gameObject.SetActive(true);
 	}
 
-	public void StartLevel(int level)
+	public void LoadLevel()
 	{
+		if (isFirstWeaponReroll)
+		{
+			return;
+		}
+
 		activeMenu.gameObject.SetActive(false);
 		menuBackgroundImage.gameObject.SetActive(false);
 
 		activeMenu = gameOverlay;
 		gameOverlay.gameObject.SetActive(true);
+	}
 
+	public void StartLevel(int level)
+	{
 		Debug.Log("Level " + level + " started");
+
+		SelectWeapon();
 	}
 
 	// Call this to update the number in the top left corner
 	public void SwapWeapon(bool subtractOne)
 	{
-		if (subtractOne)
+		if (subtractOne && !isFirstWeaponReroll)
 		{
 			numberOfLeftWeaponSwaps--;
 		}
 		gameOverlay.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = numberOfLeftWeaponSwaps.ToString();
+
+		isFirstWeaponReroll = false;
 	}
 
 	// Call this to change the text at the top
@@ -88,9 +108,21 @@ public class UI_Manager : MonoBehaviour
 		}
 	}
 
-	//Call this to change the number in the top right corner
+	// Call this to change the number in the top right corner
 	public void ChangeEnemyCount(int numberOfEnemys)
 	{
 		gameOverlay.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = numberOfEnemys.ToString();
+	}
+
+	public void SelectWeapon()
+	{
+		hasRerolledWeapon = false;
+		cantRerollText.gameObject.SetActive(false);
+
+		activeMenu.gameObject.SetActive(false);
+		menuBackgroundImage.gameObject.SetActive(true);
+
+		activeMenu = weaponSelection;
+		weaponSelection.gameObject.SetActive(true);
 	}
 }
