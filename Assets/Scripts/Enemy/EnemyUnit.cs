@@ -14,6 +14,13 @@ namespace Enemy
 		public override void Hit(int damage, EnemyScript enemy)
 		{
 			Debug.Log("Enemy Hit " + damage);
+			var randVal = Random.Range(1, 100);
+			if (randVal <= dodgeChance)
+			{
+				Debug.Log("Enemy Dodge");
+				return;
+			}
+			
 			enemy.CurrentHealth -= damage;
 			if (enemy.CurrentHealth <= 0)
 			{
@@ -32,13 +39,6 @@ namespace Enemy
 		public override void Move()
 		{
 			Debug.Log("Enemy Move " + moveSpeed);
-		}
-
-		public override void Dodge()
-		{
-			var randVal = Random.Range(1, 100);
-			if (randVal <= dodgeChance)
-				Debug.Log("Enemy Dodge");
 		}
 	}
 }

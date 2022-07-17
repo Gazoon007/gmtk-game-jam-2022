@@ -12,6 +12,5 @@ namespace Enemy
 		public abstract void Attack();
 		public abstract void Hit(int damage, EnemyScript enemy);
 		public abstract void Move();
-		public abstract void Dodge();
 	}
 }
