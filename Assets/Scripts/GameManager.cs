@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void TradeAttackValue()
     {
+        if (PlayerScript.GetInstance().SecondDicePoint == 0) return;
         PlayerScript.GetInstance().FirstDicePoint++;
         PlayerScript.GetInstance().SecondDicePoint--;
         Debug.Log("Attack: " + PlayerScript.GetInstance().FirstDicePoint);
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void TradeRangeValue()
     {
+        if (PlayerScript.GetInstance().FirstDicePoint == 0) return;
         PlayerScript.GetInstance().FirstDicePoint--;
         PlayerScript.GetInstance().SecondDicePoint++;
         Debug.Log("Attack: " + PlayerScript.GetInstance().FirstDicePoint);
