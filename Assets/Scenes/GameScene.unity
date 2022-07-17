@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471431}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: TradeAttackValue
         m_Mode: 1
@@ -2295,6 +2295,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801568391}
   m_CullTransparentMesh: 1
+
 --- !u!1 &901471430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +2378,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 97ec179ee42e24942be31c99f32de750, type: 2}
   - {fileID: 11400000, guid: 91908d9164ff98441979a7719ea3a51e, type: 2}
   - {fileID: 11400000, guid: 39d4b9dd153500b4f941fd517766a139, type: 2}
+
 --- !u!1 &946858509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,7 +2584,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471431}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: TradeRangeValue
         m_Mode: 1
@@ -4479,7 +4481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dice1Sprite: {fileID: 434327831}
   dice2Sprite: {fileID: 1349636924}
-  dice: {fileID: 901471433}
+  dice: {fileID: 0}
 --- !u!114 &1544386977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5757,7 +5759,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471434}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WeaponManager, Assembly-CSharp
         m_MethodName: RollWeaponDice
         m_Mode: 1

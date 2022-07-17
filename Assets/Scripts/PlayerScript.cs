@@ -58,7 +58,9 @@ public class PlayerScript : MonoBehaviour
         highlight.transform.position = new Vector3(point * 10f, highlight.transform.position.y, highlight.transform.position.z);
         atkAndRngTradeOff.SetActive(true);
 
+
         selectedWeapon = WeaponManager.GetInstance().selectedWeapon;
+
         if (selectedWeapon.maxRangeValue < _firstDicePoint + _secondDicePoint)
         {
             Debug.Log("Reach MAX Limit, PENALTY!");
@@ -138,6 +140,12 @@ public class PlayerScript : MonoBehaviour
             return damage;
         }
         return 0;
+    }
+
+    public void EmptyTheQuantumPoint()
+    {
+        FirstDicePoint = 0;
+        SecondDicePoint = 0;
     }
     
     // Start is called before the first frame update
