@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enemy;
 using UnityEngine;
 using TMPro;
 
@@ -79,7 +80,7 @@ public class UI_Manager : MonoBehaviour
 	public void StartLevel(int level)
 	{
 		Debug.Log("Level " + level + " started");
-
+		EnemySpawner.GetInstance().SpawnEnemy(level - 1);
 		SelectWeapon();
 	}
 
