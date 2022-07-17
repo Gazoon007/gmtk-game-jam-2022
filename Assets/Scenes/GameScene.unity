@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471431}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: TradeAttackValue
         m_Mode: 1
@@ -948,7 +948,7 @@ Transform:
   - {fileID: 1074683555}
   - {fileID: 637139365}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &434327829
 GameObject:
@@ -2158,7 +2158,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801568391
 GameObject:
@@ -2295,88 +2295,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801568391}
   m_CullTransparentMesh: 1
---- !u!1 &901471430
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 901471432}
-  - component: {fileID: 901471431}
-  - component: {fileID: 901471433}
-  - component: {fileID: 901471434}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &901471431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901471430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572fd07b45d14663aa5802923d83619a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &901471432
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901471430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 191, y: 107.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &901471433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901471430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95fc7f0696664db4bc398b453f763b80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diceList: 06000000080000000a000000
-  diceSpriteList:
-  - {fileID: 21300000, guid: 8913f9008c688f94b85a7e1c66cf85bc, type: 3}
-  - {fileID: 21300000, guid: 45478f57b4dfab144b168e26be2284b3, type: 3}
-  - {fileID: 21300000, guid: be2fe4503b557264893ee701450d9a41, type: 3}
---- !u!114 &901471434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901471430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75644531eb4680e42bafab9faeecc79b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedWeapon: {fileID: 0}
-  UI_Manager: {fileID: 0}
-  weaponText: {fileID: 1921487553}
-  weaponData:
-  - {fileID: 11400000, guid: 97ec179ee42e24942be31c99f32de750, type: 2}
-  - {fileID: 11400000, guid: 91908d9164ff98441979a7719ea3a51e, type: 2}
-  - {fileID: 11400000, guid: 39d4b9dd153500b4f941fd517766a139, type: 2}
 --- !u!1 &946858509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,7 +2500,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471431}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: TradeRangeValue
         m_Mode: 1
@@ -3127,7 +3045,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273933542
 GameObject:
@@ -4037,7 +3955,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1449744143
 SpriteRenderer:
@@ -4248,7 +4166,7 @@ RectTransform:
   - {fileID: 66575168}
   - {fileID: 1342329585}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4285,7 +4203,7 @@ Transform:
   m_Children:
   - {fileID: 1038158003}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525775313
 GameObject:
@@ -4460,7 +4378,7 @@ Transform:
   - {fileID: 167597694}
   - {fileID: 1372195724}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1539769481
 MonoBehaviour:
@@ -4532,7 +4450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dice1Sprite: {fileID: 434327831}
   dice2Sprite: {fileID: 1349636924}
-  dice: {fileID: 901471433}
+  dice: {fileID: 0}
 --- !u!114 &1544386977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5055,7 +4973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6136720950099289183, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6136720950099289183, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5722,7 +5640,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901471434}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WeaponManager, Assembly-CSharp
         m_MethodName: RollWeaponDice
         m_Mode: 1

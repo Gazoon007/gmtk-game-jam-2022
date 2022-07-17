@@ -82,6 +82,7 @@ public class EnemyScript : MonoBehaviour
 		{
 			gameObject.GetComponent<Animator>().enabled = false;
 		});
+		PlayerScript.GetInstance().EmptyTheQuantumPoint();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)

@@ -29,10 +29,7 @@ namespace Enemy
 				return;
 			}
 			
-			LeanTween.delayedCall(1f, () =>
-			{
-				enemy.CurrentHealth -= damage;
-			});
+			enemy.CurrentHealth -= damage;
 			if (enemy.CurrentHealth <= 0)
 			{
 				GameManager.GetInstance().EndTurn -= enemy.EnemyMovement_EndTurn;
@@ -44,8 +41,11 @@ namespace Enemy
 			}
 			else
 			{
-				enemy.healthSlider.value = enemy.CurrentHealth;
-				Debug.Log("Current Health " + health);
+				LeanTween.delayedCall(1f, () =>
+				{
+					enemy.healthSlider.value = enemy.CurrentHealth;
+					Debug.Log("Current Health " + health);
+				});
 			}
 
 		}
