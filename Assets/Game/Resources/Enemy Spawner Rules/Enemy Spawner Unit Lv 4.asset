@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed03bbb2acd2432983d303630a5943a2, type: 3}
+  m_Name: Enemy Spawner Unit Lv 4
+  m_EditorClassIdentifier: 
+  percentageOfEmptyGapProbability: 10
+  Enemies:
+  - Enemy: {fileID: 1016489126991960357, guid: f9636ee3f7def5047b62926294ae58d3, type: 3}
+    Qty: 3
+  - Enemy: {fileID: 1016489126991960357, guid: 4027d74d3e384534eb07b2814c7c1d81, type: 3}
+    Qty: 2
+  - Enemy: {fileID: 1016489126991960357, guid: ad7a31bb43b0e324eb2b709fa1a0c14a, type: 3}
+    Qty: 3
+  - Enemy: {fileID: 3950010876992641205, guid: 5a61397d75b4ea44781589becb001743, type: 3}
+    Qty: 3
