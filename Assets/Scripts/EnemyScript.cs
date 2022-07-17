@@ -27,6 +27,8 @@ public class EnemyScript : MonoBehaviour
 		_maxHealth = enemyData.health;
 		GameManager.GetInstance().EndTurn += EnemyMovement_EndTurn;
 
+		gameObject.GetComponent<Animator>().enabled = false;
+
 		healthSlider.maxValue = _maxHealth;
 		_currentHealth = _maxHealth;
 		healthSlider.value = _currentHealth;
@@ -74,9 +76,12 @@ public class EnemyScript : MonoBehaviour
 
 	public void EnemyMovement_EndTurn(object sender, System.EventArgs e)
 	{
-		Vector3 currentpos = transform.position;
-		currentpos.x -= 10f * enemyData.moveSpeed;
-		transform.position = currentpos;
+		gameObject.GetComponent<Animator>().enabled = true;
+		LeanTween.moveX(gameObject, gameObject.transform.position.x - 10f, 1f);
+		LeanTween.delayedCall(1f, () =>
+		{
+			gameObject.GetComponent<Animator>().enabled = false;
+		});
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)

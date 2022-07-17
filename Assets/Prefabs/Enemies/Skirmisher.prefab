@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 1016489126991960358}
   - component: {fileID: 1016489126991960359}
   - component: {fileID: 1016489126991960356}
+  - component: {fileID: -999005100465522742}
   m_Layer: 0
   m_Name: Skirmisher
   m_TagString: Untagged
@@ -356,6 +357,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.027030945, y: 0.0000009536743}
   m_Size: {x: 6.9874115, y: 11.974546}
   m_Direction: 0
+--- !u!95 &-999005100465522742
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016489126991960357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4cb32f144b718154894488f855a50911, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1016489127426329021
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016489127426329021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.28, y: 0, z: 0}
   m_LocalScale: {x: 7, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -429,12 +450,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0.9245283, b: 0.849173, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 2052045003, guid: fafac3c2720ce574d88c54b5a4355bb9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 2.4615386, y: 2.6923077}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
