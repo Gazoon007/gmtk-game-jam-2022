@@ -12,7 +12,10 @@ public class UI_Manager : MonoBehaviour
 	private Transform levelSelectMenu;
 	private Transform gameOverlay;
 	private Transform weaponSelection;
+	private Transform wonMenu;
+	private Transform lostMenu;
 	public Transform cantRerollText;
+
 
 	public int numberOfLeftWeaponSwaps;
 
@@ -28,6 +31,8 @@ public class UI_Manager : MonoBehaviour
 		levelSelectMenu = UI.GetChild(3);
 		gameOverlay = UI.GetChild(4);
 		weaponSelection = UI.GetChild(5);
+		wonMenu = UI.GetChild(6);
+		lostMenu = UI.GetChild(7);
 		cantRerollText = weaponSelection.GetChild(0);
 
 		activeMenu = mainMenu;
@@ -135,6 +140,24 @@ public class UI_Manager : MonoBehaviour
 
 	public void ResetLevel()
 	{
+		Debug.Log("Level Reset");
+	}
 
+	public void YouWon()
+	{
+		activeMenu.gameObject.SetActive(false);
+		menuBackgroundImage.gameObject.SetActive(true);
+
+		activeMenu = wonMenu;
+		wonMenu.gameObject.SetActive(true);
+	}
+
+	public void YouLost()
+	{
+		activeMenu.gameObject.SetActive(false);
+		menuBackgroundImage.gameObject.SetActive(true);
+
+		activeMenu = lostMenu;
+		lostMenu.gameObject.SetActive(true);
 	}
 }
