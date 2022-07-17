@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01c561ec9a4a644596e96ed9113c183, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: 
-  rangeValue: 0
-  damageValue: 0
+  maxRangeValue: 14
