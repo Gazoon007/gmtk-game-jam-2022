@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        var startPosition = new Vector3(transform.position.x + 150f, transform.position.y, transform.position.z);
+        var startPosition = new Vector3(transform.position.x + 100f, transform.position.y, transform.position.z);
         var nextPosition = startPosition;
 
         var tempArr = new List<GameObject>();
