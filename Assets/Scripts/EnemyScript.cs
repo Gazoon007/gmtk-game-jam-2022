@@ -11,6 +11,7 @@ public class EnemyScript : MonoBehaviour
 	private float _maxHealth;
 	private float _currentHealth;
 	private bool isColided;
+	private UI_Manager UI_Manager;
 
 	private int enemyCount;
 
@@ -41,6 +42,8 @@ public class EnemyScript : MonoBehaviour
 		healthSlider.value = _currentHealth;
 		
 		CheckEnemies();
+		
+		UI_Manager = GameObject.Find("New UI").GetComponent<UI_Manager>();
 	}
 
 	private void OnEnable()
@@ -99,9 +102,12 @@ public class EnemyScript : MonoBehaviour
 		var arrayOfEnemyScript = FindObjectsOfType<EnemyScript>();
 		enemyCount = arrayOfEnemyScript.Length;
 		Debug.Log(enemyCount);
-		
+
 		if (enemyCount == 0)
+		{
+			UI_Manager.YouWon();
 			Debug.Log("You WON!");
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
