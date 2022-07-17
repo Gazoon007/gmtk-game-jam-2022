@@ -9,6 +9,8 @@ public class TowerScript : MonoBehaviour
     public float currentHealth;
     public Slider healthSlider;
 
+    private UI_Manager UI_Manager;
+
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -17,6 +19,7 @@ public class TowerScript : MonoBehaviour
             currentHealth = 0;
             Debug.Log("Game Over");
 
+            UI_Manager.YouLost();
         }
         healthSlider.value = currentHealth;
     }
@@ -27,5 +30,6 @@ public class TowerScript : MonoBehaviour
         currentHealth = maxHealth;
         healthSlider.value = currentHealth;
 
+        UI_Manager = GameObject.Find("New UI").GetComponent<UI_Manager>();
     }
 }
