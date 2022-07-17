@@ -12,15 +12,16 @@ public class EnemyScript : MonoBehaviour
 	private float _currentHealth;
 	private bool isColided;
 	
+	
 	public float CurrentHealth
 	{
 		get => _currentHealth;
 		set => _currentHealth = value;
 	}
 
+	public GameObject dodgedText;
 	public Slider healthSlider;
 	[SerializeField] EnemyData enemyData;
-
 	private void Start()
 	{
 		_maxHealth = enemyData.health;

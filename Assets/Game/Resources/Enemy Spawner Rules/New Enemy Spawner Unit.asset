@@ -15,10 +15,10 @@ MonoBehaviour:
   percentageOfEmptyGapProbability: 0
   Enemies:
   - Enemy: {fileID: 1016489126991960357, guid: f9636ee3f7def5047b62926294ae58d3, type: 3}
-    Qty: 1
+    Qty: 0
   - Enemy: {fileID: 1016489126991960357, guid: 4027d74d3e384534eb07b2814c7c1d81, type: 3}
-    Qty: 1
+    Qty: 0
   - Enemy: {fileID: 1016489126991960357, guid: ad7a31bb43b0e324eb2b709fa1a0c14a, type: 3}
-    Qty: 1
+    Qty: 4
   - Enemy: {fileID: 3950010876992641205, guid: 5a61397d75b4ea44781589becb001743, type: 3}
-    Qty: 1
+    Qty: 0

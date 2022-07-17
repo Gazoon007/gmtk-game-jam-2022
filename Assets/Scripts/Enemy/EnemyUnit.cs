@@ -17,6 +17,14 @@ namespace Enemy
 			var randVal = Random.Range(1, 100);
 			if (randVal <= dodgeChance)
 			{
+				if (enemy.dodgedText)
+				{
+					enemy.dodgedText.SetActive(true);
+					LeanTween.delayedCall(4f, () =>
+					{
+						enemy.dodgedText.SetActive(false);
+					});
+				}
 				Debug.Log("Enemy Dodge");
 				return;
 			}

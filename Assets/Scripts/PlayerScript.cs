@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
         atkAndRngTradeOff.SetActive(true);
 
         var selectedWeapon = WeaponManager.GetInstance().selectedWeapon;
-        if (selectedWeapon.maxRangeValue > _firstDicePoint + _secondDicePoint)
+        if (selectedWeapon.maxRangeValue < _firstDicePoint + _secondDicePoint)
         {
             Debug.Log("Reach MAX Limit, PENALTY!");
             canAttack = false;

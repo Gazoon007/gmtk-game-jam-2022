@@ -337,6 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e0befe61814390bc2023aa2535edc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dodgedText: {fileID: 6654106366318921778}
   healthSlider: {fileID: 1016489127931753503}
   enemyData: {fileID: 11400000, guid: 79f53ed39c7f9cd4aaf743736063d2c0, type: 2}
 --- !u!70 &1016489126991960356
@@ -584,7 +585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2032030228152076765
 RectTransform:
   m_ObjectHideFlags: 0
