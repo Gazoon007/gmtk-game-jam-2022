@@ -11,6 +11,9 @@ public class PlayerScript : MonoBehaviour
     private static PlayerScript instance;
     
     private WeaponUnit _weaponUnit;
+    WeaponData selectedWeapon;
+
+    public List<Sprite> weaponSprites;
 
     private int _firstDicePoint;
     private int _secondDicePoint;
@@ -55,7 +58,8 @@ public class PlayerScript : MonoBehaviour
         highlight.transform.position = new Vector3(point * 10f, highlight.transform.position.y, highlight.transform.position.z);
         atkAndRngTradeOff.SetActive(true);
 
-        var selectedWeapon = WeaponManager.GetInstance().selectedWeapon;
+
+        selectedWeapon = WeaponManager.GetInstance().selectedWeapon;
 
         if (selectedWeapon.maxRangeValue < _firstDicePoint + _secondDicePoint)
         {
@@ -89,6 +93,20 @@ public class PlayerScript : MonoBehaviour
     {
         var projectileIns = Instantiate(projectile, gameObject.transform);
         projectileIns.transform.localPosition = new Vector3(0, 0, 0);
+
+        if(selectedWeapon.name=="Crossbow")
+        {
+            projectileIns.GetComponent<SpriteRenderer>().sprite = weaponSprites[0];
+        }
+        else if (selectedWeapon.name == "Spear")
+        {
+            projectileIns.GetComponent<SpriteRenderer>().sprite = weaponSprites[1];
+        }
+        else if (selectedWeapon.name == "Throwing Axe")
+        {
+            projectileIns.GetComponent<SpriteRenderer>().sprite = weaponSprites[2];
+        }
+
         LeanTween.move(projectileIns, highlight.gameObject.transform.position, 1f);
         LeanTween.delayedCall(1f, () =>
         {
