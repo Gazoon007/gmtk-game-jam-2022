@@ -13,6 +13,11 @@ namespace Enemy
 
 		public override void Hit(int damage, EnemyScript enemy)
 		{
+			if (enemy.EnemyCount == 1)
+			{
+				enemy.YouWon();
+			}
+			
 			Debug.Log("Enemy Hit " + damage);
 			var randVal = Random.Range(1, 100);
 			if (randVal <= dodgeChance)
@@ -34,7 +39,6 @@ namespace Enemy
 			{
 				GameManager.GetInstance().EndTurn -= enemy.EnemyMovement_EndTurn;
 				enemy.CurrentHealth = 0;
-				enemy.CheckEnemies();
 				LeanTween.delayedCall(1f, () =>
 				{
 					Destroy(enemy.gameObject);
@@ -48,7 +52,7 @@ namespace Enemy
 					Debug.Log("Current Health " + health);
 				});
 			}
-
+			enemy.CheckEnemies();
 		}
 
 		public override void Move()

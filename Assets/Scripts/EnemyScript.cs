@@ -110,6 +110,12 @@ public class EnemyScript : MonoBehaviour
 		}
 	}
 
+	public void YouWon()
+	{
+		UI_Manager.YouWon();
+		Debug.Log("You WON!");
+	}
+	
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.tag == "highlight")
