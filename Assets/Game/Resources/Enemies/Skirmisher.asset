@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c37491a8ca443b855cc956c1908540, type: 3}
   m_Name: Skirmisher
   m_EditorClassIdentifier: 
-  dodgeChance: 30
+  dodgeChance: 40
   attackValue: 5
   moveSpeed: 1
   health: 3

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public event EventHandler EndTurn;
     private static GameManager instance;
 
+    public static Action<int, int> OnTradedValue;
+
     public static GameManager GetInstance()
     {
         return instance;
@@ -24,6 +26,24 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
+    }
+
+    public void TradeAttackValue()
+    {
+        PlayerScript.GetInstance().FirstDicePoint++;
+        PlayerScript.GetInstance().SecondDicePoint--;
+        Debug.Log("Attack: " + PlayerScript.GetInstance().FirstDicePoint);
+        Debug.Log("Range: " + PlayerScript.GetInstance().SecondDicePoint);
+        OnTradedValue?.Invoke(PlayerScript.GetInstance().FirstDicePoint, PlayerScript.GetInstance().SecondDicePoint);
+    }
+
+    public void TradeRangeValue()
+    {
+        PlayerScript.GetInstance().FirstDicePoint--;
+        PlayerScript.GetInstance().SecondDicePoint++;
+        Debug.Log("Attack: " + PlayerScript.GetInstance().FirstDicePoint);
+        Debug.Log("Range: " + PlayerScript.GetInstance().SecondDicePoint);
+        OnTradedValue?.Invoke(PlayerScript.GetInstance().FirstDicePoint, PlayerScript.GetInstance().SecondDicePoint);
     }
 
     // Update is called once per frame
