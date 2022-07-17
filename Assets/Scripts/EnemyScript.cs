@@ -11,8 +11,15 @@ public class EnemyScript : MonoBehaviour
 	private float _maxHealth;
 	private float _currentHealth;
 	private bool isColided;
-	
-	
+
+	private int enemyCount;
+
+	public int EnemyCount
+	{
+		get => enemyCount;
+		set => enemyCount = value;
+	}
+
 	public float CurrentHealth
 	{
 		get => _currentHealth;
@@ -32,6 +39,8 @@ public class EnemyScript : MonoBehaviour
 		healthSlider.maxValue = _maxHealth;
 		_currentHealth = _maxHealth;
 		healthSlider.value = _currentHealth;
+		
+		CheckEnemies();
 	}
 
 	private void OnEnable()
@@ -83,6 +92,16 @@ public class EnemyScript : MonoBehaviour
 			gameObject.GetComponent<Animator>().enabled = false;
 		});
 		PlayerScript.GetInstance().EmptyTheQuantumPoint();
+	}
+
+	public void CheckEnemies()
+	{
+		var arrayOfEnemyScript = FindObjectsOfType<EnemyScript>();
+		enemyCount = arrayOfEnemyScript.Length;
+		Debug.Log(enemyCount);
+		
+		if (enemyCount == 0)
+			Debug.Log("You WON!");
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)

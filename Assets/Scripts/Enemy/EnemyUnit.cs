@@ -34,6 +34,7 @@ namespace Enemy
 			{
 				GameManager.GetInstance().EndTurn -= enemy.EnemyMovement_EndTurn;
 				enemy.CurrentHealth = 0;
+				enemy.CheckEnemies();
 				LeanTween.delayedCall(1f, () =>
 				{
 					Destroy(enemy.gameObject);
