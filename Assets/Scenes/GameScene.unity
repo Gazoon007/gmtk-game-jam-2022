@@ -2501,6 +2501,8 @@ MonoBehaviour:
   selectedWeapon: {fileID: 0}
   UI_Manager: {fileID: 0}
   weaponText: {fileID: 1921487553}
+  currentWeaponSprite: {fileID: 0}
+  weaponSprites: []
   weaponData:
   - {fileID: 11400000, guid: 97ec179ee42e24942be31c99f32de750, type: 2}
   - {fileID: 11400000, guid: 91908d9164ff98441979a7719ea3a51e, type: 2}
@@ -5138,6 +5140,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1893635246021113580, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1893635247249161018, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5266,6 +5272,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7873195869689822162, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8224361874435902523, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
       propertyPath: m_text
       value: Increase Power
@@ -5277,6 +5287,14 @@ PrefabInstance:
     - target: {fileID: 8224361874435902523, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
       propertyPath: m_fontSizeBase
       value: 21.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154873169881717317, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 126.1107
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154873169881717317, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 121.7641
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8b9acae11bb0f40933f503d0184d5b, type: 3}

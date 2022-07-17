@@ -18,6 +18,9 @@ public class WeaponManager : MonoBehaviour
 
     public TextMeshProUGUI weaponText;
 
+    public Image currentWeaponSprite;
+    public List<Sprite> weaponSprites;
+
     private int swapsAllowed;
 
     private int currentWeapon;
@@ -42,6 +45,7 @@ public class WeaponManager : MonoBehaviour
         _maxRange = selectedWeapon.maxRangeValue;
         Debug.Log("selected weapon " + selectedWeapon.name);
         weaponText.text = "Current Weapon: " + selectedWeapon.name;
+        currentWeaponSprite.sprite = weaponSprites[weaponNumber];
     }
 
     public void RollWeaponDice()
